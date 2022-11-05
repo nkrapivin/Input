@@ -169,6 +169,10 @@ function __input_gamepad_set_type()
                 {
                     raw_type = "CommunityXBox360";
                 }
+                else if (__input_string_contains(_desc, "logitech f310", "f310"))
+                {
+                    raw_type = "CommunityXBox360";
+                }
                 else if (__input_string_contains(_desc, "xbox"))
                 {
                     raw_type = "CommunityLikeXBox";
