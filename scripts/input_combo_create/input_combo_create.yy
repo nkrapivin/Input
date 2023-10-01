@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "input_combo_create",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Extended Verbs",
-    "path": "folders/Input/Extended Verbs.yy",
+    "name": "27  Combos",
+    "path": "folders/Input/27  Combos.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "input_combo_create",
-  "tags": [],
-  "resourceType": "GMScript",
 }

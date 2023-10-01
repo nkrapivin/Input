@@ -1,3 +1,4 @@
+// Feather disable all
 /// @param GMconstant
 /// @param rawIndex
 /// @param rawMappingType
@@ -5,6 +6,8 @@
 
 function __input_class_gamepad_mapping(_gm, _raw, _type, _sdl_name) constructor
 {
+    __INPUT_GLOBAL_STATIC_VARIABLE  //Set static __global
+    
     gm       = _gm;
     raw      = _raw;
     type     = _type;
@@ -43,7 +46,7 @@ function __input_class_gamepad_mapping(_gm, _raw, _type, _sdl_name) constructor
     __value_previous = undefined;
     __value_delta    = 0.0;
     
-    static tick = function(_gamepad, _clear, _scan)
+    static tick = function(_gamepad, _scan)
     {
         held_previous = held;
         if (__value_previous != undefined) __value_previous = value; //Don't update the previous value until we get our first scanned value
@@ -55,7 +58,7 @@ function __input_class_gamepad_mapping(_gm, _raw, _type, _sdl_name) constructor
         
         if (!_scan) return;
         
-        if (!_clear)
+        if (__global.__game_focus || (__global.__allow_gamepad_tester && __global.__gamepad_tester_data.__enabled && is_debug_overlay_open()))
         {        
             switch(type)
             {

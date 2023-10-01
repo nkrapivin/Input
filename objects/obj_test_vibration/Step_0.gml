@@ -1,4 +1,4 @@
-input_tick();
+//Feather disable all
 
 var _gamepad = input_player_get_gamepad();
 if (_gamepad >= 0)

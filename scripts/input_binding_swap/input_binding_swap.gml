@@ -1,3 +1,4 @@
+// Feather disable all
 /// @desc    Swaps over two bindings within the same profile. This is useful to resolve binding conflicts
 /// @param   verbA
 /// @param   alternateA
@@ -8,7 +9,7 @@
 
 function input_binding_swap(_verb_a, _alternate_a, _verb_b, _alternate_b, _player_index = 0, _profile_name = undefined)
 {
-	__input_initialize();
+    __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
     __INPUT_VERIFY_PLAYER_INDEX
     __INPUT_VERIFY_PROFILE_NAME
     

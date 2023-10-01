@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Other",
-    "path": "folders/Input/Other.yy",
+    "name": "23  Other",
+    "path": "folders/Input/23  Other.yy",
   },
 }
